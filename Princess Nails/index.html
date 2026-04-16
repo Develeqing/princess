@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Nails</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- JavaScript externo -->
+    <script src="js/script.js"></script>
+
+  <div class="texto-final">
+    🇧‌🇾‌ 🇳‌🇪‌🇮‌🇱‌🇦‌ 🇷‌🇴‌🇲‌🇪‌🇷‌🇴‌
+</div>
+
+  <header class="header">
+
+    <img src="img/princess.png" class="logo1" alt="Logo1">
+
+    <nav class="menu">
+
+    <a href="#">Inicio</a>
+
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Catálogo ▾</a>
+
+        <div class="dropdown-content">
+            <a href="#" onclick="mostrarCategoria('acrilicas')">Acrílicas</a>
+    <a href="#" onclick="mostrarCategoria('gel')">Gel</a>
+    <a href="#" onclick="mostrarCategoria('disenos')">Diseños</a>
+
+        </div>
+    </div>
+
+    <a href="#" onclick="abrirCitaDirecto()">Citas</a>
+    <a href="#">Información</a>
+
+</nav>
+
+</header>
+
+  <section id="acrilicas" class="categoria">
+
+    <button class="volver" onclick="volverCatalogo()">⬅ Volver</button>
+
+    <h2>Acrílicas</h2>
+
+    <div class="catalogo">
+
+        <div class="producto">
+            <img src="img/u1.jpg" onclick="abrirModal(this.src)">
+
+    <h4>Diseño Acrílico 1</h4>
+
+    <p class="precio">$30.000</p>
+
+    <p class="descripcion">Uñas acrílicas con acabado brillante y diseño elegante.</p>
+</div>
+
+        <div class="producto">
+            <img src="img/u2.jpg" onclick="abrirModal(this.src)">
+
+    <h4>Diseño Acrílico 1</h4>
+
+    <p class="precio">$30.000</p>
+
+    <p class="descripcion">Uñas acrílicas con acabado brillante y diseño elegante.</p>
+</div>
+
+    </div>
+
+</section>
+
+  <section id="gel" class="categoria">
+
+    <button class="volver" onclick="volverCatalogo()">⬅ Volver</button>
+
+    <h2>Gel</h2>
+
+    <div class="catalogo">
+
+        <div class="producto">
+            <img src="img/u1.jpg" onclick="abrirModal(this.src)">
+
+    <h4>Diseño Gel 1</h4>
+
+    <p class="precio">$30.000</p>
+
+    <p class="descripcion">Uñas en Gel con acabado brillante y diseño elegante.</p>
+</div>
+
+        <div class="producto">
+            <img src="img/u2.jpg" onclick="abrirModal(this.src)">
+
+    <h4>Diseño Gel 2</h4>
+
+    <p class="precio">$30.000</p>
+
+    <p class="descripcion">Uñas en Gel con acabado brillante y diseño elegante.</p>
+</div>
+
+    </div>
+
+</section>
+
+  <section id="disenos" class="categoria">
+
+    <button class="volver" onclick="volverCatalogo()">⬅ Volver</button>
+
+    <h2>Mano Alzada</h2>
+
+    <div class="catalogo">
+
+        <div class="producto">
+            <img src="img/u1.jpg" onclick="abrirModal(this.src)">
+
+    <h4>Diseño Mano Alzada 1</h4>
+
+    <p class="precio">$30.000</p>
+
+    <p class="descripcion">Uñas a mano Alzada con acabado brillante y diseño elegante.</p>
+</div>
+
+        <div class="producto">
+            <img src="img/u2.jpg" onclick="abrirModal(this.src)">
+
+    <h4>Diseño Mano Alzada 2</h4>
+
+    <p class="precio">$30.000</p>
+
+    <p class="descripcion">Uñas a mano Alzada con acabado brillante y diseño elegante.</p>
+</div>
+
+    </div>
+</section>
+<section class="seccion-categorias">
+
+    <div class="card-categoria">
+        <img src="img/acrilicas.jpg">
+        <h3>Acrílicas</h3>
+    </div>
+
+    <div class="card-categoria">
+        <img src="img/gel.jpg">
+        <h3>Gel</h3>
+    </div>
+
+    <div class="card-categoria">
+        <img src="img/disenos.jpg">
+        <h3>Diseños</h3>
+    </div>
+
+</section>
+
+<div id="formCita" class="modal-cita">
+
+    <div class="contenido-cita">
+
+        <span class="cerrar" onclick="cerrarCita()">×</span>
+
+        <h2>♥ ᴀɢᴇɴᴅᴀ ᴛᴜ ᴄɪᴛᴀ ♥</h2>
+
+        <input id="nombre" type="text" placeholder="🇳‌🇴‌🇲‌🇧‌🇷‌🇪‌">
+        <input id="telefono" type="tel" placeholder="🇹‌🇪‌🇱‌🇪‌🇫‌🇴‌🇳‌🇴">
+        <input id="fecha" type="date">
+        <textarea id="detalles" placeholder="🇩‌🇪‌🇹‌🇦‌🇱‌🇱‌🇪‌🇸‌"></textarea>
+
+        <button onclick="enviarCita()">🇦‌🇬‌🇪‌🇳‌🇩‌🇦‌🇷‌</button>
+
+    </div>
+
+</div>
+
+
+</body>
+<script src="js/script.js"></script>
+</html>
